@@ -12,6 +12,7 @@
 		B5F3AD2C20E4AC4C002E57E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3AD2A20E4AC4C002E57E6 /* Main.storyboard */; };
 		B5F3AD2E20E4AC4E002E57E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F3AD2D20E4AC4E002E57E6 /* Assets.xcassets */; };
 		B5F3AD3120E4AC4E002E57E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F3AD2F20E4AC4E002E57E6 /* LaunchScreen.storyboard */; };
+		B5F3AD3920E4AC5E002E57E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F3AD3820E4AC5E002E57E6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B5F3AD2D20E4AC4E002E57E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F3AD3020E4AC4E002E57E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F3AD3220E4AC4E002E57E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F3AD3820E4AC5E002E57E6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B5F3AD2620E4AC4C002E57E6 /* AppDelegate.swift */,
 				B5F3AD2820E4AC4C002E57E6 /* ViewController.swift */,
+				B5F3AD3820E4AC5E002E57E6 /* File.swift */,
 				B5F3AD2A20E4AC4C002E57E6 /* Main.storyboard */,
 				B5F3AD2D20E4AC4E002E57E6 /* Assets.xcassets */,
 				B5F3AD2F20E4AC4E002E57E6 /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					B5F3AD2220E4AC4C002E57E6 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F3AD2920E4AC4C002E57E6 /* ViewController.swift in Sources */,
+				B5F3AD3920E4AC5E002E57E6 /* File.swift in Sources */,
 				B5F3AD2720E4AC4C002E57E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WARB38VJA;
 				INFOPLIST_FILE = LeetCode/Info.plist;
@@ -289,6 +295,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingbo.LeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WARB38VJA;
 				INFOPLIST_FILE = LeetCode/Info.plist;
@@ -307,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingbo.LeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let l = LeetCode()
+        let result = l.findDuplicates([4,3,2,7,8,2,3,1])
+        print(result)
+
+        
+        //二叉树
+//        let root = LeetCode.TreeNode.init(1)
+//        root.left = LeetCode.TreeNode.init(2)
+//        root.right = LeetCode.TreeNode.init(3)
+//        root.left?.left = LeetCode.TreeNode.init(4)
+//        root.right?.right = LeetCode.TreeNode.init(5)
+//        l.maxDepth(root)
+
+        //链表
+//        let head = LeetCode.ListNode.init(1)
+//        head.next = LeetCode.ListNode.init(2)
+//        head.next?.next = LeetCode.ListNode.init(3)
+//        head.next?.next?.next = LeetCode.ListNode.init(4)
+//        l.removeElements(head, 2)
+
         // Override point for customization after application launch.
         return true
     }
