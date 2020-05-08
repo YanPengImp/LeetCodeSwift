@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let l = LeetCode()
         let result = l.findDuplicates([4,3,2,7,8,2,3,1])
-        print(result)
+        var arr = [1,2,3,4,5,6]
+        l.rotate(&arr, 3)
+        print(arr)
 
         
         //二叉树

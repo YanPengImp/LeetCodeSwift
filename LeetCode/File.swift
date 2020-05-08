@@ -1129,6 +1129,32 @@ class LeetCode {
         }
         return string
     }
+    //188.旋转数组
+    func rotate(_ nums: inout [Int], _ k: Int) {
+        let t = k % nums.count
+        if t == 0 {
+            return
+        } else {
+            aaaa: for i in 0..<t {
+                var right = i + t
+                var tmp = nums[i]
+                var count = 0
+                repeat {
+                    count += 1
+                    let a = nums[right]
+                    nums[right] = tmp
+                    tmp = a
+                    right += t
+                    right %= nums.count
+                    if count == nums.count - 1 {
+                        nums[right] = tmp
+                        break aaaa
+                    }
+                } while (right != i)
+            }
+        }
+    }
+
     //202.快乐数 每位数平方和相加 一直到是否可以为1
     func isHappy(_ n: Int) -> Bool {
         func getNext(_ num: Int) -> Int {
